@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0 2rem;
+}
+
+/* Header Design */
+header {
+    background: linear-gradient(45deg, #333, #555);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border: 4px solid #333;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+/* Section Styling */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-left: 6px solid #4CAF50; /* Add colored frame to sections */
+    border-top: 6px solid #4CAF50;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Drone Card 3D Effect with Borders */
+.drone-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.drone-card {
+    background: #fff;
+    padding: 1.5rem;
+    width: calc(50% - 1rem);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 4px solid #2196F3; /* Add border to each card */
+    border-radius: 12px;
+}
+
+.drone-card:hover {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.drone-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.drone-card p {
+    color: #666;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Hover Effect for Buttons and Links */
+a, button {
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover, button:hover {
+    background-color: #388E3C;
+    transform: scale(1.1);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border: 4px solid #2196F3; /* Add border to footer */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .drone-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .drone-card {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 1rem 0;
+    }
+}
